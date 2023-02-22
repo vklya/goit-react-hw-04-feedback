@@ -37,7 +37,7 @@ export default function App () {
           />
         </Section>
         <Section title="Statistics">
-          {!calcFeedback ? (
+          {!calcFeedback() ? (
             <Notification text="There is no feedbacks" />
           ) : (
             <Statistics
